@@ -272,8 +272,9 @@ section {
   margin-bottom: 40px;
 }
 
-.contact-info, .contact-form {
+.contact-info {
   flex: 1 1 300px;
+  padding-left: 30px;
 }
 
 .contact-info p, .contact-info a {
@@ -283,6 +284,13 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -305,7 +313,7 @@ section {
 }
 
 .map-container {
-  margin-top: 30px;
+  margin: 30px 10px;
 }
 
 .social-icons {
@@ -323,4 +331,10 @@ section {
 .social-icons a:hover {
   transform: scale(1.2);
   color: var(--accent-yellow);
+}
+
+@media (max-width: 800px) {
+  .contact-form {
+    padding-right: 50px;
+  }
 }
