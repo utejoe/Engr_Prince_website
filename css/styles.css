@@ -245,3 +245,15 @@ section {
   font-size: 15px;
   line-height: 1.5;
 }
+
+
+.project-card h4 {
+  margin: 10px 0 6px;
+  font-size: 18px;
+  color: var(--primary-blue);
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
