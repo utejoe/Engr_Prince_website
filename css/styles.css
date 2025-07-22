@@ -108,6 +108,58 @@ section {
   padding: 20px 0;
 }
 
+/* Hero Image */
+.hero {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* About */
+.about-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Service cards */
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Project cards */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .service-card, .project-card {
