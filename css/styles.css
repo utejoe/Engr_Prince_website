@@ -257,3 +257,70 @@ section {
   font-size: 15px;
   line-height: 1.5;
 }
+
+
+/* Contact Page */
+.contact-page h2, .contact-page h3 {
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 300px;
+}
+
+.contact-info p, .contact-info a {
+  font-size: 16px;
+  color: var(--text-black);
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  background-color: var(--accent-yellow);
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: var(--text-black);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.map-container {
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: var(--primary-blue);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: var(--accent-yellow);
+}
