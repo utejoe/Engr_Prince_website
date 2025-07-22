@@ -229,3 +229,19 @@ section {
   transform: scale(1.2);
   color: var(--accent-yellow);
 }
+
+
+.service-card i {
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  margin: 10px 0 5px;
+  color: var(--primary-blue);
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
