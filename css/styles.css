@@ -1,0 +1,124 @@
+:root {
+  --primary-blue: #2C3E50;
+  --accent-yellow: #F1C40F;
+  --neutral-gray: #ECF0F1;
+  --text-black: #2D2D2D;
+  --white: #FFFFFF;
+  --cta-green: #27AE60;
+}
+
+/* Base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text-black);
+  background-color: var(--white);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-blue);
+  padding: 20px 0;
+  color: var(--white);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background-color: var(--neutral-gray);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 10px 0 30px;
+}
+
+.cta-btn {
+  background-color: var(--accent-yellow);
+  padding: 10px 20px;
+  color: var(--text-black);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+.service-cards,
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card,
+.project-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: var(--neutral-gray);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card, .project-card {
+    flex: 1 1 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+  }
+}
