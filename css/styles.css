@@ -13,6 +13,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   color: var(--text-black);
   background-color: var(--white);
+  padding-top: 80px;
 }
 
 .container {
@@ -24,11 +25,14 @@ body {
 /* Header */
 .header {
   background-color: var(--primary-blue);
-  padding: 20px 0;
   color: var(--white);
-  position: sticky;
+  position: fixed;         /* ✅ Fixed positioning */
   top: 0;
-  z-index: 1000; 
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
 .logo {
